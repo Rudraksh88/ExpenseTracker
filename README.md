@@ -2,9 +2,9 @@
 Expense Tracker app for the SDE-Intern task. This app is made using Python and FastAPI
 
 ## Installation  
-Python 3.9+ required. Install FastAPI and Uvicorn ASGI Web server using pip:  
+Python 3.9+ required. Install FastAPI and Uvicorn ASGI Web server using ```pip install -r requirements.txt``` or using the below snippet:  
 
-```pip install -r requirements.txt```
+```pip install fastapi uvicorn```
 ## API Guide
 Well, FastAPI documents pretty much everything about the API endpoints with an nteractive UI to test the APIs. The API endpoints are in accordance with the project specification.
 
@@ -40,6 +40,7 @@ Updates a expense of a group. Structure for which is:
              {"name": "fruits", "value": 50, "paid_by": [{"A": 50}], "owed_by": [{"A": 10,"B": 30, "C": 10}]}]
  }
 ```
+
 * ```/add-balances```  
 API Endpoint to add balances to a group. Structure for which is:
 ```
